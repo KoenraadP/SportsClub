@@ -48,5 +48,10 @@ namespace SportsClub.Bll
         // UPDATE
 
         // DELETE
+        public static bool Delete(int id)
+        {
+            Activity a = ActivityDal.Read(id);
+            return ActivityDal.Delete(a);
+        }
     }
 }

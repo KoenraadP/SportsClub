@@ -47,5 +47,21 @@ namespace SportsClub.WebApp.Controllers
             Activity a = Activities.Read(id);
             return View(a);
         }
+
+        // UPDATE
+
+        // DELETE
+        public ActionResult Delete(int id)
+        {
+            Activity a = Activities.Read(id);
+            return View(a);
+        }
+
+        [HttpPost]
+        public ActionResult DeleteConfirmed(int activityId)
+        {
+            Activities.Delete(activityId);
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using SportsClub.Entities;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,5 +55,13 @@ namespace SportsClub.Dal
         // UPDATE
 
         // DELETE
+        public static bool Delete(Activity a)
+        {
+            using(var db = new SportsClubDbContext())
+            {
+                db.Entry(a).State = EntityState.Deleted;
+                return db.SaveChanges() > 0;
+            }
+        }
     }
 }
