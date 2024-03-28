@@ -1,1 +1,1 @@
-Na downloaden best deze stappen volgen als het niet onmiddellijk lukt om lokaal te draaien: https://creo.instructure.com/courses/6165/pages/problemen-met-entityframework?module_item_id=310080
+Na downloaden best deze stappen volgen als het niet onmiddellijk lukt om lokaal te draaien: https://creo.instructure.com/courses/6165/pages/wat-te-doen-wanneer-je-een-sportsclub-versie-van-github-downloadt?module_item_id=310080
